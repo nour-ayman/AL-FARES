@@ -1,0 +1,1 @@
+contains static files used across the project (images, icons, fonts, etc.)

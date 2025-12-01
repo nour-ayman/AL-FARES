@@ -13,6 +13,8 @@ The application is organized around the following **core features**:
 6. **Checkout** – Order completion, shipping details, and payment workflow.  
 7. **Home** – Landing page with featured products and categories.  
 
+**UI Components:** All frontend UI components use **Material UI (MUI)** for a modern and consistent design. [MUI Docs](https://mui.com)
+
 ---
 
 ## Git Branching Workflow
@@ -61,19 +63,27 @@ Each feature has its own branch, for example:
 
 ---
 
-## Team Members
-- **Wezza** – Team Leader  
-- **Assem** – Developer  
-- **Hamza** – Developer  
+## Team Members & Feature Responsibilities
+- **Wezza**
+  1. Auth  
+  2. Checkout  
+  3. Cart  
+- **Assem**
+  1. Home  
+  2. Categories  
+- **Hamza**
+  1. Products  
+  2. Search  
 
 ---
 
 ## Technologies Used
-- **Frontend:** React  
+- **Frontend:** React + Material UI (MUI)  
 - **Backend:** Node.js + Express  
 - **Database:** MongoDB / MySQL / PostgreSQL  
 - **Version Control:** Git & GitHub  
 
 📚 Git Documentation: https://git-scm.com/doc  
 📚 React Docs: https://react.dev  
-📚 Node.js Docs: https://nodejs.org/en/docs
+📚 Node.js Docs: https://nodejs.org/en/docs  
+📚 MUI Docs: https://mui.com

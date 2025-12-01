@@ -1,12 +1,11 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LoginForm from "./feature/auth/components/LoginForm";
+import "./feature/auth/components/LoginForm.css"; 
 
-function App() {
+export default function App() {
   return (
     <div>
-
+      <LoginForm />
     </div>
   );
 }
-
-export default App;

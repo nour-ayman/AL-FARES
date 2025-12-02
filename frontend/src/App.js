@@ -1,11 +1,17 @@
-import React from "react";
-import LoginForm from "./feature/auth/components/LoginForm";
-import "./feature/auth/components/LoginForm.css"; 
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginForm from './feature/auth/components/LoginForm';
+import AboutUs from './feature/auth/components/AboutUs';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;

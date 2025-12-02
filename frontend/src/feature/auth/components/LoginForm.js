@@ -1,5 +1,6 @@
     import { useRef, useState, useEffect } from 'react';
     import './LoginForm.css'; // import the CSS file
+    import { Link } from 'react-router-dom';
 
     const LoginForm = () => {
         const userRef = useRef();
@@ -39,12 +40,17 @@
                         <h1>You are logged in!</h1>
                         <br />
                         <p>
-                            <a href="#">Go to Home</a>
+                            <Link to="HomePage">Go to Home</Link>
+                            {/* hanstkhdem <Link to="/"> wama naamel router */}
                         </p>
                     </section>
                 ) : (
                     <section>
                         <h1 style={{ textAlign: 'center', marginBottom: '1rem'}}>AL FARES</h1>
+
+                        <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#ccc', marginBottom: '10px', marginTop: '-10px' }}>
+                        Demo / Test Version
+                        </p>  
                        
                         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
 
@@ -72,12 +78,12 @@
                             />
                             <button>Login</button>
                         </form>
-                        <p style={{textAlign: 'center', fontSize: '0.9rem', marginTop: '1rem'}}>
-                            New Here? 
-                            <span className="line">
-                                <a href="LearnMore" style={{marginLeft: '5px', fontWeight: 'bold'}}>Learn More</a>
+                        {/* <p style={{textAlign: 'center', fontSize: '0.9rem', marginTop: '1rem'}}>
+                            New Here?  */}
+                            <span className="line" style={{display: 'flex', justifyContent: 'center', marginTop: '1rem'}}>
+                                <Link to="AboutUs" style={{marginLeft: '5px', fontWeight: 'bold'}}>About Us</Link>
                             </span>
-                        </p>
+                        {/* </p> */}
                     </section>
                 )}
             </div>
